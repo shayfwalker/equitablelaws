@@ -2,13 +2,20 @@
 
 
 	body{
+		background-attachment:fixed; 
+
 		position: relative;
-		width:100%;
-		height: 100%;
+		width:970px;
+		height: 100px;
 		/*background-color:green; */
 		
 		
 	}
+/*
+	html{
+		min-width:100%;
+		min-height:100%;  
+	}*/
 
 	#main a p{
 		display:inline-block; 
@@ -33,6 +40,28 @@
 		text-align:center;
 	}
 
+	#background{
+		position:fixed; 
+	}
+
+
+	#bg-text{
+		color:white;
+		background-color:red; 
+		font-size:90px; 
+		display:inline-block; 
+		/*transform:(1deg);*/
+		/*-webkit-transform:rotate(1deg);*/
+		/*position:fixed;*/
+		position:relative;
+		bottom:4.3em;
+		left:8em;
+		width:2.5em;
+		padding-left:0.1em; 
+
+
+	}
+
 	#main a{
 		text-decoration:none; 
 		text-align:center; 
@@ -48,12 +77,13 @@
 		/*opacity:0.6;*/
 		width:14em;
 		height:0em;
-		/*padding-left:2em;*/
+		padding-left:2em;
 		position:relative;
 		/*top:5em;*/
-		left:3em;
-		bottom:20em;
-		margin:15em;
+		/*left:0.1em;*/
+		right:1em;
+		bottom:15em;
+		margin:17em;
 		/*font-family:'Macondo', cursive;*/
 
 		transition:margin-right .5s;
@@ -65,15 +95,21 @@
 	#main h1{
 		width:4em;
 		/*text-align:right; */
-		color:white;
-		width:5em;
+		color:black;
+		/*width:5em;*/
 		display: inline-block;
-		padding-right:2em;
+		/*padding-right:2em;*/
+		/*padding-left:0.1em; */
 		font-size:9em;
+		font-weight:none;
+		position:fixed;
+		/*background-color:#ffffff;*/
+		/*opacity:0.8; */
 	}
+	
 	.overlay{
-		height:0%;
-		width:100%;
+		height:100%;
+		width:0%;
 		position:fixed;
 		z-index: 1;
 		top:0;
@@ -119,12 +155,14 @@
 		padding:16px; 
 	}
 
-	#main span{
+	 span{
 		position:relative;
-		left:19.3em; 
-		top:1em;
+		left:12.8em; 
+		top:4em;
 		/*bottom:1em;*/
-		color:white;
+		color:green;
+		font-size:70px;
+		cursor:pointer; 
 
 
 	}
